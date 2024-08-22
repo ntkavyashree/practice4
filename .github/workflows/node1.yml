@@ -31,6 +31,6 @@ jobs:
     - run: npm ci
     - run: npm test
     - run: node -v
-    - run: echo "hello $NAME. $BUILD"
+    - run: echo "hello $NAME. $BUILD. my API KEY IS ${{secrets.API_KEY}}"
       env: 
         BUILD: 'we are running job'
